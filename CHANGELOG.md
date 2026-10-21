@@ -1,3 +1,30 @@
+## 4.3.0
+
+Upgraded `fake_firebase_security_rules` to ^0.6.0. Key/value checks on maps are not stricter. See ([cel-dart #15](https://github.com/atn832/cel-dart/pull/15)).
+
+> Field selection (`e.f`) and indexing (`e['f']`) on a map now raise a `no_such_field` error when the key is absent, per the spec ([Runtime Errors](https://github.com/cel-expr/cel-spec/blob/master/doc/langdef.md#runtime-errors), [Field Selection](https://github.com/cel-expr/cel-spec/blob/master/doc/langdef.md#field-selection)). Before, both returned `null`.
+
+## 4.2.0
+
+Upgraded MockWriteBatch's `update()` signature to match cloud_firestore 6.7.1 ([PR-339](https://github.com/atn832/fake_cloud_firestore/pull/339)). Thank you [jt274](https://github.com/jt274) and 
+[jamesdhutton](https://github.com/atn832/fake_cloud_firestore/issues/338)!
+
+## 4.1.1
+
+Upgraded cloud_firestore_platform_interface to ^8.0.0 ([PR-336](https://github.com/atn832/fake_cloud_firestore/pull/336)). Thank you [Wim-Hexagons](https://github.com/Wim-Hexagons)!
+
+## 4.1.0+1
+
+Update `Transaction.update` and `WriteBatch.update` signatures for cloud_firestore 6.2.0 ([PR-335](https://github.com/atn832/fake_cloud_firestore/pull/335)). Thank you [TonyDowney](https://github.com/TonyDowney)!
+
+## 4.0.2+1
+
+Remove the dependency on package:quiver (switch from quiver's `hash2` function to dart:core's `Object.hash`) ([PR-333](https://github.com/atn832/fake_cloud_firestore/pull/333)). Thank you [devoncarew](https://github.com/devoncarew)!
+
+## 4.0.1
+
+Support querying by `__name__` ([PR-330](https://github.com/atn832/fake_cloud_firestore/pull/330)). Thank you [ben-milanko](https://github.com/ben-milanko)!
+
 ## 4.0.0
 
 Upgrade to Firestore 6.0.0. [PR-325](https://github.com/atn832/fake_cloud_firestore/pull/325). Thank you [jt274](https://github.com/jt274)!

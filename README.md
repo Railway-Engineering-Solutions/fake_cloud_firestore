@@ -183,6 +183,7 @@ https://github.com/atn832/fake_cloud_firestore/blob/0bd0b648241c0ed3e6eac2c26eef
 - Query documents with `collection.snapshots` or `query.get`.
 - Queries:
   - Filter results with `query.where`. The library supports `equals`, `isGreaterThan`, `isGreaterThanOrEqualTo`, `isLessThan`,`isLessThanOrEqualTo`, `isNull`, `isNotEqualTo`, `arrayContains`, `arrayContainsAny`, `whereIn` and `whereNotIn`.
+  - Supports filtering by special fields like `FieldPath.documentId` and `__name__`.
   - Sort results with `query.orderBy`.
   - Limit results with `query.limit`, `limitToLast`, `startAfterDocument`, `startAt`, `startAtDocument`, `endAt`, `endAtDocument`, `endBefore`, `endBeforeDocument`. Note: `startAnd` and `endAt` work only on exact matches.
   - Filter with `Filter`, including composite filters like `Filter.and` and `Filter.or`.
@@ -203,6 +204,8 @@ https://github.com/atn832/fake_cloud_firestore/blob/0bd0b648241c0ed3e6eac2c26eef
 
 | cloud_firestore | fake_cloud_firestore |
 |-----------------|----------------------|
+| 6.7.1           | 4.2.0                |
+| 6.2.0           | 4.1.0                |
 | 6.0.0           | 4.0.0                |
 | 5.0.0           | 3.0.0                |
 | 4.17.0          | 2.5.0                |
